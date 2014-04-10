@@ -53,7 +53,7 @@ body {
 }
 
 .purpleTitle {
-  color: #5a3359;
+  color: #5a3358;
   font-weight: 700;
   font-size: 34px;
   margin: 0;
@@ -415,7 +415,7 @@ body {
 }
 
 .name h1 a img {
-  background-color: #5a3359;
+  background-color: #5a3358;
   margin-top: -15px;
   padding: 5px 20px;
 }
@@ -499,7 +499,7 @@ body {
   text-align: right;
 }
 .newsListing a {
-  color: #5a3359;
+  color: #5a3358;
 }
 
 @media (max-width: 650px) {
