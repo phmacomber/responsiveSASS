@@ -1,0 +1,121 @@
+/* BANNER OVERLAYS */
+.tile {
+	&.withBannerOverlay {
+		a {
+			&:hover, &:focus {
+				opacity: 1;
+			}
+
+		}
+	}
+}
+.bannerOverlay {
+	color: $white;
+	height: 98%;
+	padding: 43px 13px 13px 33px;
+	position: absolute;
+		left: 4px;
+		bottom: 5px;
+	width: 32%;
+	z-index: 8;
+
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' *For Banner Gradient*/
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjIiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(left,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.2)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#00000000',GradientType=1 ); /* IE6-8 */
+  
+  /* Fallback for web browsers that don't support RGBa  
+  background: rgb(0,0,0);
+  /* RGBa with 0.7 opacity  
+  background: rgba(0,0,0,0.7);
+  /* For IE 5.5 - 7 
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /* For IE 8 
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";*/
+
+  h1 {
+  	color: $white;
+  }
+  ul {
+  	line-height: 1.2;
+  	margin: 20px 0;
+  	li {
+  		background: $light-grey;
+  		height: 20px;
+  		margin: {
+  			bottom: 1px;
+  		}
+  		padding: 0 10px;
+  		width: 80%;
+  		&:hover {
+  			background: $medium-grey;
+  			a {
+  				color: $light-grey;
+  			}
+  		}
+  	}
+  }
+  p, ul, ul li {
+  	a {
+  		color: $medium-grey;
+  		font: {
+	  		weight: $bold;
+	  		size: 12px
+  		}
+  	}
+  }
+}
+@media (max-width: $max-width) {
+	.bannerOverlay {
+		h1 {
+			line-height: 40px;
+			font: {
+				size: 30px;
+			}
+		}
+		p {
+			line-height: 22px;
+		}
+	}
+}
+@media (max-width: 1100px) {
+	.bannerOverlay {
+		h1 {
+			line-height: 30px;
+			font: {
+				size: 20px;
+			}
+		}
+		p {
+			line-height: 21px;
+		}
+	}
+}
+@media (max-width: 1050px) {
+	.bannerOverlay {
+		p {
+			line-height: 18px;
+		}
+	}
+}
+@media (max-width: 895px) {
+	.bannerOverlay {
+		p {
+			display: none;
+		}
+	}
+}
+@media (max-width: 850px) {
+	.bannerOverlay {
+		float:left;
+		position: relative;
+			left: auto;
+			bottom: auto;
+		width: 100%;
+	}
+}

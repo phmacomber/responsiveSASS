@@ -1,0 +1,72 @@
+// VARIABLES  
+
+// Colors
+$taylor-purple: #5a3359;
+$taylor-blue: #00adef;
+$taylor-green: #08954c;
+$silver: #c0c0c0;
+$very-light-grey: #ccc;
+$light-grey: #e6e6e6;
+$medium-grey: #666;
+$steel-grey: #3f3c3d;
+$dark-grey: #1a1a1a;
+$burnt-orange: #d54c20;
+$yellow: #ffcb05;
+$white: #fff;
+$black: #000;
+
+// Screen Sizes
+$largest-width: 1240px;
+$max-width: 1220px;
+$full-width: 1070px;
+
+//Text Styling
+$bold: 700; 		// font-weight: bold
+$normal: 400;		// font-weight: normal
+
+
+//Mixins
+@mixin borderRadius ($r) {
+	-webkit-border-radius:$r;
+  	-mox-border-radius:$r;
+  	-o-border-radius:$r;
+  	-border-radius:$r;
+}
+
+@mixin sanSerifFontFamily {
+	font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif
+}
+
+@mixin sanSerifFontFamily-nonBold {
+	font-family: Helvetica, Arial, sans-serif
+}
+
+@mixin topBarButtons {
+	@include sanSerifFontFamily;
+	font: {
+		size: 13px !important;
+	}
+	line-height: 16px !important;
+	margin: {
+		right: 10px;
+	}
+	text: {
+		transform: uppercase;
+	}
+}
+
+@mixin transitionDuration ($x){
+	-webkit-transition-duration: $x;
+    -moz-transition-duration: $x;
+    -ms-transition-duration: $x;
+    -o-transition-duration: $x;
+    transition-duration: $x;
+}
+
+@mixin transitionProperty ($b) {
+	-webkit-transition-property: $b;
+    -moz-transition-property: $a;
+    -ms-transition-property: $b;
+    -o-transition-property: $b;
+    transition-property: $b;
+}

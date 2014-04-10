@@ -1,0 +1,10 @@
+/* BANNER OVERLAYS */
+.tile {
+	&.withBannerOverlay {
+		a {
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

@@ -1,0 +1,149 @@
+
+@import "variables";
+
+/*Custom CSS Transitions - mg*/
+.isotope,
+.isotope .isotope-item {
+  @include transitionDuration (0.8s);
+}
+
+.isotope {
+	@include transitionDuration((height, width));
+}
+
+.isotope .isotope-item {
+	@include transitionDuration((-webkit-transform, opacity));
+  
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+   @include transitionDuration (0s);
+}
+
+
+body {
+	background: {
+		color: $dark-grey;
+	}
+}
+
+/* CSS classes from base.css */
+.clear {
+	clear: both;
+}
+.clear-left {  			
+	clear: left;
+}
+.clear-right {  		
+	clear: right;
+}
+.purpleTitle {
+	color: $taylor-purple;
+	font: {
+		weight: $bold;
+		size: 34px;
+	}
+	margin: 0;
+	text: {
+		transform: none;
+	}
+}
+/* END base.css classes */
+
+#main {
+	max-width: $largest-width !important;
+}
+
+.row {
+	max-width: $largest-width !important;
+	padding: 10px 20px 20px 20px !important;
+}
+
+.column, .columns {
+  padding: 5px !important;
+  margin: 0 !important;
+}
+
+@media only screen {
+  .column, .columns {
+    padding: 5px !important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: $full-width) {
+	h1 {
+		font: {
+			size: 36px;
+			weight: $bold;
+		}
+		line-height: 45px;
+		margin: 0 0 23px 0;
+		text: {
+			transform: uppercase;
+		}
+	}
+	h2 {
+		color: $burnt-orange;
+		font: {
+			size: 16px;
+			weight: $normal;
+		}
+		line-height: 20px;
+		text: {
+			transform: uppercase;
+		}
+	}
+}
+
+/* FILTERS - This section will be deleted after development */
+.parents {
+	background: {
+		color: $yellow;
+	}
+}
+.prospectiveStudent {
+	background: {
+		color: $dark-grey;
+	}
+	&:hover { 							// "&" is used to reference parent selectors
+		background: {
+			color: $dark-grey;
+		}
+	}
+}
+/* END FILTERS */
+
+#main .row {
+	background: {
+		color: $dark-grey;
+	}
+}
+.readMore{
+  color: $yellow;
+  padding:10px;
+  font: {
+  	size: 12px;
+  	family: Helvetica;
+  	weight: $bold;
+  }
+  text: {
+  	transform: uppercase;
+  	align:right;
+  }
+  a {
+  	color: $yellow;
+  }
+}
+
+@import "counselorByGeolocation";
+@import "bannerOverlays";
+@import "tileOverlay";
+@import "topBarHeader";
+@import "newsWidget";
+@import "twitterWidget";
+@import "taylorFactWidget";
