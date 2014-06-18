@@ -1,0 +1,73 @@
+@media (max-width: $tabletLandscape) {
+	h1 {
+		font: {
+			size: 36px;
+			weight: $fontBold;
+		}
+		line-height: 45px;
+		margin: 0 0 23px 0;
+		text: {
+			transform: uppercase;
+		}
+	}
+	h2 {
+		color: $burnt-orange;
+		font: {
+			size: 16px;
+			weight: $fontNormal;
+		}
+		line-height: 20px;
+		text: {
+			transform: uppercase;
+		}
+	}
+}
+/* CSS Classes from base.css */
+.clear {
+	clear:both;
+}
+.clear-right {
+	clear:right;
+}
+.clear-left {
+	clear:left;
+}
+body {
+	background: $grey-dark!important;
+}
+#main {
+	@include css3 ((-webkit-, -moz-, ''), box-shadow, none !important);
+	max-width: $overallMaxWidth !important;
+	.row {
+		background: {
+			color: $grey-dark;
+		}
+	}
+}
+.row {
+	max-width: 1240px !important;
+  	padding: 10px 20px 20px 20px !important;
+}
+.column, .columns {
+	@include marginPadding(0 !important, 5px !important);
+	@media only screen {
+		@include marginPadding(0 !important, 5px !important);
+	}
+}
+/*White Class for Testing Template Background Color*/
+.white {
+	background: $white !important;
+	.prospectiveStudent {
+		background-color: $white;
+	}
+}
+#main.white .row {
+	background-color: $white;
+}
+header {
+	background: {
+		color: $white;
+		image: none;
+	}
+
+}

@@ -1,0 +1,11 @@
+/* TOP-TOOLBAR - Row 1 - logo and topGroup */
+/* line 3, ../sass/_topToolbarRow1.scss */
+.top-toolbar .title-area {
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+  margin-top: -15px;
+}
+/* line 11, ../sass/_topToolbarRow1.scss */
+.top-toolbar .name h1 {
+  margin-bottom: 0px !important;
+}

@@ -1,58 +1,61 @@
-// VARIABLES  
+// VARIABLES
 
-// Colors
-$taylor-purple: #5a3358;
-$taylor-blue: #00adef;
-$taylor-green: #08954c;
+//COLORS
+$black: #000000;
+$burnt-orange: #b06030;
+$grey-dark: lighten(adjust_hue(#000000, 0), 10);                    // #1a1a1a - main background color
+$grey-medium: lighten(adjust_hue(#000000, 0), 40);                  // #666666
+$grey-light: lighten(#000000, 80);                                  // #cccccc
+$grey-very-light: lighten(adjust_hue(#000000, 0), 90);              // #e6e6e6
+$grey-steel: #3f3c3d;
+$orange: #f47920;
 $silver: #c0c0c0;
-$very-light-grey: #ccc;
-$light-grey: #e6e6e6;
-$medium-grey: #666;
-$steel-grey: #3f3c3d;
-$dark-grey: #1a1a1a;
-$burnt-orange: #d54c20;
+$taylor-blue: #00adef;
+$taylor-green: #00954d;
+$taylor-drk-grn: #007476; 
+$taylor-slate: #7d999b;                                             // slate color
+$taylor-purple: #5a3358;
+$white: #ffffff;
 $yellow: #ffcb05;
-$white: #fff;
-$black: #000;
-
-// Screen Sizes
-$largest-width: 1240px;
-$max-width: 1220px;
-$full-width: 1070px;
-
-//Text Styling
-$bold: 700; 		// font-weight: bold
-$normal: 400;		// font-weight: normal
+//THEME COLORS
+$theme-steel-grey: #4b4b5f;
+$theme-dark-grey: #23231c;
+$theme-light-grey: #ededed;
+$theme-near-black: #191001;
 
 
-//Mixins
-@mixin borderRadius ($r) {
-	-webkit-border-radius:$r;
-  	-mox-border-radius:$r;
-  	-o-border-radius:$r;
-  	-border-radius:$r;
+// SCREEN SIZES
+$overallMaxWidth: 1240px;
+$tabletLandscape: 1070px;
+$tabletPortrait: 1024px;
+$tablet: 939px;
+$mobile: 639px;
+
+
+//FONT WEIGHTS 
+$fontBold: 700;
+$fontNormal: 400;
+
+
+// MIXINS
+@mixin sanSerifFontFamily {
+    font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
 }
 
-@mixin sanSerifFontFamily {
-	font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif
+@mixin sanSerifFontFamily-Oblique {
+    font-family: "Helvetica Oblique", Helvetica, Arial, sans-serif;
+}
+
+@mixin sanSerifFontFamily-bold {
+    font-family: "Helvetica Bold", Helvetica, Arial, sans-serif;
 }
 
 @mixin sanSerifFontFamily-nonBold {
-	font-family: Helvetica, Arial, sans-serif
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-@mixin topBarButtons {
-	@include sanSerifFontFamily;
-	font: {
-		size: 13px !important;
-	}
-	line-height: 16px !important;
-	margin: {
-		right: 10px;
-	}
-	text: {
-		transform: uppercase;
-	}
+@mixin serifFontFamily {
+    font-family: "Times New Roman", Times, serif;
 }
 
 @mixin transitionDuration ($x){
@@ -63,10 +66,60 @@ $normal: 400;		// font-weight: normal
     transition-duration: $x;
 }
 
-@mixin transitionProperty ($b) {
-	-webkit-transition-property: $b;
-    -moz-transition-property: $a;
-    -ms-transition-property: $b;
-    -o-transition-property: $b;
-    transition-property: $b;
+@mixin transitionProperty ($h, $w) {
+	-webkit-transition-property: $h, $w;
+    -moz-transition-property: $h, $w;
+    -ms-transition-property: $h, $w;
+    -o-transition-property: $h, $w;
+    transition-property: $h, $w;
 }
+
+@mixin boxShadow ($a) {
+    box-shadow: $a;
+    -webkit-box-shadow: $a;
+    -moz-box-shadow: $a;
+}
+
+@mixin marginPadding($c, $d) {
+    margin: $c;
+    padding: $d;
+}
+
+@mixin borderRadius ($rad) {
+    -webkit-border-radius:$rad;
+    -mox-border-radius:$rad;
+    -o-border-radius:$rad;
+    border-radius:$rad;
+}
+// LIST OF PREFIXES:  -webkit-, -khtml-, -moz-, -ms-, -o-, ''
+@mixin css3($list, $property, $value) {
+     @each $prefix in $list {
+          #{$prefix}#{$property}: $value;
+     }
+}
+
+// LIST OF PREFIXES:  -webkit-, -khtml-, -moz-, -ms-, -o-, ''
+@mixin css3-a($list, $property, $value-a, $value-b) {
+     @each $prefix in $list {
+          #{$prefix}#{$property}: #{$prefix}#{$value-a}, $value-b;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

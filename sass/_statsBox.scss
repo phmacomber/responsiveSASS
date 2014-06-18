@@ -1,0 +1,42 @@
+.statsBox {
+	background: {
+		color: $yellow; /* was #fcc707 */
+	}
+	height: 290px;
+	padding: 40px 10px 10px 10px;
+	@media (max-width: $mobile + 1px) {
+		height: 190px;
+	}
+}
+.statsBoxNumber {
+	color: $taylor-purple;
+	font: {
+		size: 50px;
+		weight: $fontBold;
+	}
+	margin: {
+		bottom: 30px;
+	}
+	text: {
+		align: center;
+	}
+}
+.statsBoxContent {
+	color: $taylor-purple;
+	font: {
+		size: 22px;
+		weight: $fontBold;
+	}
+	line: {
+		height: 22px;
+	}
+	text: {
+		transform: uppercase;
+	}
+}
+.statsBoxClick {
+	color: $black;
+	font: {
+		size: 15px;
+	}
+}

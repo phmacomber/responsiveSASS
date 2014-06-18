@@ -1,0 +1,25 @@
+#twitter-widget-6, #twitter-widget-0 {
+	width: 80% !important;
+}
+img.tweetieBird {
+	height: 62px;
+	padding: {
+		top: 5px;
+	}
+	position: absolute;
+	top: 10px;
+	left: 10%;
+	width: 54px;
+}
+.taylorTweet {
+	display: block;
+	height: 100%;
+	min-height: 115px;
+	overflow: hidden;
+	text: {
+		align: center;
+	}
+	@media (max-width: 650px) {
+		min-height: 220px;
+	}
+}

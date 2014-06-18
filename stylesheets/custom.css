@@ -1,0 +1,1396 @@
+/**** GENERAL ISOTOPE PAGE CHANGES ****/
+/*Custom CSS Transitions - mg*/
+/* line 5, ../sass/_isotope.scss */
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+/* line 8, ../sass/_isotope.scss */
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+/* line 13, ../sass/_isotope.scss */
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/** disabling Isotope CSS3 transitions **/
+/* line 20, ../sass/_isotope.scss */
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+@media (max-width: 1070px) {
+  /* line 2, ../sass/_generalCSS.scss */
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0 0 23px 0;
+    text-transform: uppercase;
+  }
+
+  /* line 13, ../sass/_generalCSS.scss */
+  h2 {
+    color: #b06030;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+/* CSS Classes from base.css */
+/* line 26, ../sass/_generalCSS.scss */
+.clear {
+  clear: both;
+}
+
+/* line 29, ../sass/_generalCSS.scss */
+.clear-right {
+  clear: right;
+}
+
+/* line 32, ../sass/_generalCSS.scss */
+.clear-left {
+  clear: left;
+}
+
+/* line 35, ../sass/_generalCSS.scss */
+body {
+  background: #1a1a1a !important;
+}
+
+/* line 38, ../sass/_generalCSS.scss */
+#main {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  max-width: 1240px !important;
+}
+/* line 41, ../sass/_generalCSS.scss */
+#main .row {
+  background-color: #1a1a1a;
+}
+
+/* line 47, ../sass/_generalCSS.scss */
+.row {
+  max-width: 1240px !important;
+  padding: 10px 20px 20px 20px !important;
+}
+
+/* line 51, ../sass/_generalCSS.scss */
+.column, .columns {
+  margin: 0 !important;
+  padding: 5px !important;
+}
+@media only screen {
+  /* line 51, ../sass/_generalCSS.scss */
+  .column, .columns {
+    margin: 0 !important;
+    padding: 5px !important;
+  }
+}
+
+/*White Class for Testing Template Background Color*/
+/* line 58, ../sass/_generalCSS.scss */
+.white {
+  background: white !important;
+}
+/* line 60, ../sass/_generalCSS.scss */
+.white .prospectiveStudent {
+  background-color: white;
+}
+
+/* line 64, ../sass/_generalCSS.scss */
+#main.white .row {
+  background-color: white;
+}
+
+/* line 67, ../sass/_generalCSS.scss */
+header {
+  background-color: white;
+  background-image: none;
+}
+
+/**** HEADER CHANGES ****/
+/** General **/
+/* line 4, ../sass/_header.scss */
+.showTopMenuItem {
+  display: none;
+}
+
+@media (max-width: 939px) {
+  /* line 8, ../sass/_header.scss */
+  .showTopMenuItem {
+    display: inherit;
+  }
+}
+/* line 12, ../sass/_header.scss */
+.ALT-2 {
+  background: center top repeat-x url("/application/themes/foundation-starter-site/images/template/color-gradient.png");
+}
+
+/* line 15, ../sass/_header.scss */
+.name a:not(.button):hover {
+  /* logo on mobile/tablet/desktop */
+  opacity: 1;
+}
+
+/* TOP-TOOLBAR */
+/* line 21, ../sass/_header.scss */
+.top-toolbar {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+/* TOP-TOOLBAR - Row 1 - logo and topGroup */
+/* line 3, ../sass/_toptoolbarRow1.scss */
+.top-toolbar .title-area {
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+  margin-top: -15px;
+}
+/* line 11, ../sass/_toptoolbarRow1.scss */
+.top-toolbar .name h1 {
+  margin-bottom: 0px !important;
+}
+/* line 17, ../sass/_toptoolbarRow1.scss */
+.top-toolbar #searchForm > input {
+  background: none repeat scroll 0 0 rgba(17, 17, 17, 0.2) !important;
+  -webkit-border-radius: 0;
+  -mox-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: #666666 !important;
+  font-size: 11px;
+  /* 8pt */
+  font-weight: 700;
+  height: 2em;
+  line-height: 2em;
+  margin-right: 0px;
+  margin-top: 0px !important;
+  text-transform: uppercase;
+  top: 0;
+}
+
+/* line 37, ../sass/_toptoolbarRow1.scss */
+.medium-fi {
+  font-size: 24px;
+  position: absolute;
+  right: 25px !important;
+}
+
+/* line 44, ../sass/_toptoolbarRow1.scss */
+.fi-magnifying-glass.medium-fi {
+  color: white;
+}
+
+/* line 47, ../sass/_toptoolbarRow1.scss */
+.search {
+  font-size: 13px !important;
+  line-height: 16px !important;
+}
+
+/* line 53, ../sass/_toptoolbarRow1.scss */
+.login a {
+  line-height: 20px !important;
+  padding: 0 10px !important;
+}
+
+/* line 57, ../sass/_toptoolbarRow1.scss */
+.topGroup, .topGroup li, .topGroup a {
+  color: #666666 !important;
+  font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  line-height: 16px !important;
+  text-transform: uppercase !important;
+}
+
+/* line 69, ../sass/_toptoolbarRow1.scss */
+.topGroup {
+  margin-left: 0px !important;
+}
+/* line 73, ../sass/_toptoolbarRow1.scss */
+.topGroup a {
+  padding: 3px 8px !important;
+}
+/* line 76, ../sass/_toptoolbarRow1.scss */
+.topGroup .darkIcon {
+  color: #666666;
+}
+
+/* TOP-TOOLBAR - Row 2 - audienceButtons */
+/* line 2, ../sass/_toptoolbarRow2.scss */
+#audButtonRow {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+/* line 7, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons, #audButtonRow .audienceButtons li, #audButtonRow .audienceButtons a {
+  font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px !important;
+  text-transform: uppercase;
+}
+/* line 18, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons {
+  margin-left: 0px !important;
+}
+/* line 22, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons li {
+  border: 1px #00adef solid !important;
+}
+/* line 25, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons .audText {
+  color: #00adef !important;
+  padding: 0 15px;
+}
+/* line 29, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons a {
+  color: #666666 !important;
+}
+/* line 31, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons a.current {
+  background-color: #00adef !important;
+  color: white !important;
+}
+
+/* TOP-NAV - Top-bar - mainNav and admButtons */
+/* Desktop */
+@media (min-width: 940px) {
+  /* line 4, ../sass/_topnavTopBar.scss */
+  .top-nav, .top-bar {
+    height: 35px;
+  }
+
+  /* line 7, ../sass/_topnavTopBar.scss */
+  #main .row {
+    padding-top: 0px !important;
+  }
+}
+@media (max-width: 640px) {
+  /* line 13, ../sass/_topnavTopBar.scss */
+  .top-nav {
+    background-color: #5a3358 !important;
+  }
+}
+@media (max-width: 939px) {
+  /* line 13, ../sass/_topnavTopBar.scss */
+  .top-nav {
+    height: 45px;
+  }
+}
+
+/* mobile/tablet logo area */
+/* line 26, ../sass/_topnavTopBar.scss */
+.row.logo-menu {
+  padding: 0 10px !important;
+}
+
+@media (max-width: 939px) {
+  /* line 32, ../sass/_topnavTopBar.scss */
+  .top-bar .title-area {
+    float: initial;
+    text-align: center;
+  }
+  /* line 38, ../sass/_topnavTopBar.scss */
+  .top-bar .toggle-topbar {
+    display: initial;
+  }
+}
+/* line 44, ../sass/_topnavTopBar.scss */
+.top-bar .name {
+  height: 35px !important;
+  margin: auto;
+  width: 150px;
+}
+/* line 49, ../sass/_topnavTopBar.scss */
+.top-bar .name h1 a {
+  display: initial !important;
+  width: initial !important;
+}
+
+/* line 58, ../sass/_topnavTopBar.scss */
+.name h1 a {
+  padding: 0px !important;
+}
+/* line 62, ../sass/_topnavTopBar.scss */
+.name img {
+  background-color: #5a3358;
+  padding: 5px 20px;
+}
+@media (max-width: 939px) {
+  /* line 62, ../sass/_topnavTopBar.scss */
+  .name img {
+    margin-top: -10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 641px) {
+  /* line 79, ../sass/_topnavTopBar.scss */
+  .top-bar .toggle-topbar.menu-icon a::after {
+    -webkit-box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black;
+    box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black;
+  }
+}
+/* mobile/tablet search */
+/* line 87, ../sass/_topnavTopBar.scss */
+#mainNav #searchForm input {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+/* line 101, ../sass/_topnavTopBar.scss */
+.admButtons .infoButton {
+  background-color: #7d999b !important;
+}
+/* line 106, ../sass/_topnavTopBar.scss */
+.admButtons .visitButton {
+  background-color: #007476 !important;
+}
+/* line 111, ../sass/_topnavTopBar.scss */
+.admButtons .applyButton {
+  background-color: #f47920 !important;
+}
+
+/* line 117, ../sass/_topnavTopBar.scss */
+.admButtons, .admButtons li, .admButtons a {
+  color: white !important;
+  font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  line-height: 16px !important;
+  text-transform: uppercase !important;
+}
+
+/* line 129, ../sass/_topnavTopBar.scss */
+.admButtons {
+  margin-right: 12px !important;
+}
+/* line 133, ../sass/_topnavTopBar.scss */
+.admButtons li {
+  margin-left: 10px;
+}
+
+/** END Specfic Rows **/
+/** Dropdowns and Main Navigation **/
+/* line 143, ../sass/_topnavTopBar.scss */
+.top-bar-section {
+  width: 100%;
+}
+/* line 145, ../sass/_topnavTopBar.scss */
+.top-bar-section ul {
+  margin: 10px 0 0 10px;
+}
+/* line 148, ../sass/_topnavTopBar.scss */
+.top-bar-section ul li a {
+  color: #666666;
+}
+/* line 151, ../sass/_topnavTopBar.scss */
+.top-bar-section ul li:hover > a, .top-bar-section ul li:hover > a:hover {
+  background: rgba(17, 17, 17, 0.5);
+}
+/* line 155, ../sass/_topnavTopBar.scss */
+.top-bar-section ul.dropdown l1 a, .top-bar-section ul#mainNav ul.dropdown li > a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* line 167, ../sass/_topnavTopBar.scss */
+.top-bar-section #mainNav li > a {
+  opacity: 1;
+}
+/* line 171, ../sass/_topnavTopBar.scss */
+.top-bar-section > ul > .divider {
+  height: 22px;
+  margin-bottom: 10px;
+  margin-top: -6px;
+}
+/* line 179, ../sass/_topnavTopBar.scss */
+.top-bar-section .dropdown li:hover {
+  background-color: rgba(122, 122, 122, 0.9);
+}
+/* line 186, ../sass/_topnavTopBar.scss */
+.top-bar-section ul.dropdown li:hover a, .top-bar-section ul#mainNav ul.dropdown li:hover > a {
+  background-color: transparent;
+}
+/* line 191, ../sass/_topnavTopBar.scss */
+.top-bar-section ul#mainNav li > a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+/* line 203, ../sass/_topnavTopBar.scss */
+.top-bar-section #mainNav li:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.button) {
+  background-color: transparent;
+  background-image: none;
+}
+/* line 210, ../sass/_topnavTopBar.scss */
+.top-bar-section #mainNav li:not(.has-form):hover a:not(.button), .top-bar-section #mainNav li:not(.has-form) a:not(.button):hover {
+  background-color: rgba(17, 17, 17, 0.5);
+  color: white !important;
+}
+/* line 216, ../sass/_topnavTopBar.scss */
+.top-bar-section .has-dropdown {
+  margin-left: -1px;
+  margin-top: -6px;
+}
+
+/* line 226, ../sass/_topnavTopBar.scss */
+.logo-menu .top-bar-section .has-dropdown > a:after {
+  border-color: rgba(204, 204, 204, 0.5) transparent transparent transparent !important;
+}
+@media only screen and (min-width: 940px) {
+  /* line 226, ../sass/_topnavTopBar.scss */
+  .logo-menu .top-bar-section .has-dropdown > a:after {
+    margin-top: 0px !important;
+    top: 12px !important;
+  }
+}
+
+/* line 1, ../sass/_widgets.scss */
+.readMore {
+  color: #ffcb05;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px;
+  text-align: right;
+  text-transform: uppercase;
+}
+/* line 13, ../sass/_widgets.scss */
+.readMore a {
+  color: #ffcb05;
+}
+
+/* line 17, ../sass/_widgets.scss */
+.white .readMore, .white .readMore a {
+  color: #b06030;
+}
+
+/* Banner Overlay mg */
+/* line 4, ../sass/_bannerOverlays.scss */
+.withBannerOverlay a:hover, .withBannerOverlay a:focus {
+  opacity: 1;
+}
+
+/* line 9, ../sass/_bannerOverlays.scss */
+.bannerOverlay {
+  color: white;
+  height: 98%;
+  padding: 43px 13px 13px 33px;
+  position: absolute;
+  left: 4px;
+  bottom: 5px;
+  width: 32%;
+  z-index: 8;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' *For Banner Gradient*/
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjIiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000',GradientType=1 );
+  /* IE6-8 */
+  /* Fallback for web browsers that don't support RGBa  
+  background: rgb(0,0,0);
+  /* RGBa with 0.7 opacity  
+  background: rgba(0,0,0,0.7);
+  /* For IE 5.5 - 7 
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /* For IE 8 
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";*/
+}
+@media (max-width: 1073px) {
+  /* line 9, ../sass/_bannerOverlays.scss */
+  .bannerOverlay {
+    width: 42%;
+  }
+}
+@media (max-width: 924px) {
+  /* line 9, ../sass/_bannerOverlays.scss */
+  .bannerOverlay {
+    width: 52%;
+  }
+}
+/* line 43, ../sass/_bannerOverlays.scss */
+.bannerOverlay h1 {
+  color: white;
+  font-family: "Helvetica Bold", Helvetica, Arial, sans-serif;
+  font-size: 45px;
+  line-height: 42px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+@media (max-width: 1220px) {
+  /* line 43, ../sass/_bannerOverlays.scss */
+  .bannerOverlay h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 1044px) {
+  /* line 43, ../sass/_bannerOverlays.scss */
+  .bannerOverlay h1 {
+    font-size: 29x;
+    line-height: 32px;
+  }
+}
+/* line 73, ../sass/_bannerOverlays.scss */
+.bannerOverlay h2 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 67px;
+  line-height: 51px;
+  margin-top: 0;
+  text-transform: none;
+}
+@media (max-width: 1044px) {
+  /* line 73, ../sass/_bannerOverlays.scss */
+  .bannerOverlay h2 {
+    font-size: 53px;
+    line-height: 37px;
+  }
+}
+/* line 95, ../sass/_bannerOverlays.scss */
+.bannerOverlay ul {
+  line-height: 1.2;
+  margin: 20px 0;
+}
+/* line 98, ../sass/_bannerOverlays.scss */
+.bannerOverlay ul li {
+  background: #e6e6e6;
+  height: 20px;
+  margin-bottom: 1px;
+  padding: 0 10px;
+  width: 56%;
+}
+/* line 106, ../sass/_bannerOverlays.scss */
+.bannerOverlay ul li:hover {
+  background: #666666;
+}
+/* line 112, ../sass/_bannerOverlays.scss */
+.bannerOverlay p a, .bannerOverlay ul a, .bannerOverlay ul li a {
+  color: #666666;
+  font-size: 13px;
+  font-weight: 700;
+}
+@media (max-width: 1220px) {
+  /* line 120, ../sass/_bannerOverlays.scss */
+  .bannerOverlay p {
+    line-height: 22px;
+  }
+}
+@media (max-width: 1050px) {
+  /* line 120, ../sass/_bannerOverlays.scss */
+  .bannerOverlay p {
+    line-height: 18px;
+  }
+}
+@media (max-width: 895px) {
+  /* line 120, ../sass/_bannerOverlays.scss */
+  .bannerOverlay p {
+    display: none;
+  }
+}
+@media (max-width: 895px) {
+  /* line 134, ../sass/_bannerOverlays.scss */
+  .bannerOverlay p#departmentSearchHeading {
+    display: block;
+  }
+}
+/* line 143, ../sass/_bannerOverlays.scss */
+.bannerOverlay ul li:hover a {
+  color: #e6e6e6;
+}
+
+/* line 150, ../sass/_bannerOverlays.scss */
+.bannerMobileOverlay {
+  display: none;
+}
+
+/* line 154, ../sass/_bannerOverlays.scss */
+p#departmentSearchHeading {
+  background-color: #00adef;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  margin-bottom: 0;
+  padding: 10px;
+  width: 56%;
+}
+@media (max-width: 895px) {
+  /* line 153, ../sass/_bannerOverlays.scss */
+  p {
+    display: block;
+  }
+}
+
+/* line 173, ../sass/_bannerOverlays.scss */
+input#interestKeyword {
+  background-color: #e6e6e6;
+  background-image: none;
+  border: none;
+  -webkit-border-radius: 0;
+  -mox-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: #666666;
+  font-family: "Helvetica Bold", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  height: 30px;
+  line-height: 20px;
+  width: 56%;
+}
+/* line 191, ../sass/_bannerOverlays.scss */
+input#interestSubmit {
+  display: none;
+}
+
+/* line 195, ../sass/_bannerOverlays.scss */
+#bannerDeptSearch {
+  display: block;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  /* line 209, ../sass/_bannerOverlays.scss */
+  .withBannerOverlay {
+    position: relative;
+    left: auto;
+    bottom: auto;
+  }
+
+  /* line 215, ../sass/_bannerOverlays.scss */
+  .banner:hover a, .banner a:hover {
+    opacity: 0.3;
+  }
+  /* line 219, ../sass/_bannerOverlays.scss */
+  .banner:hover .bannerMobileOverlay {
+    background: transparent;
+  }
+
+  /* line 224, ../sass/_bannerOverlays.scss */
+  .bannerMobileOverlay {
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' *For Banner Gradient*/
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000',GradientType=0 );
+    /* IE6-9 */
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    top: 1%;
+    text-align: center;
+    width: 100%;
+  }
+  /* line 241, ../sass/_bannerOverlays.scss */
+  .bannerMobileOverlay h1 {
+    color: white;
+    font-family: "Helvetica Bold", Helvetica, Arial, sans-serif;
+    font-size: 23px;
+    line-height: 21px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+  /* line 257, ../sass/_bannerOverlays.scss */
+  .bannerMobileOverlay h2 {
+    color: white;
+    font-family: "Helvetica Bold", Helvetica, Arial, sans-serif;
+    font-size: 33px;
+    line-height: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+
+  /* line 274, ../sass/_bannerOverlays.scss */
+  .bannerOverlay {
+    background: transparent;
+    filter: none;
+    float: left;
+    padding: 0;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+  }
+  /* line 283, ../sass/_bannerOverlays.scss */
+  .bannerOverlay h1, .bannerOverlay h2 {
+    display: none;
+  }
+  /* line 286, ../sass/_bannerOverlays.scss */
+  .bannerOverlay ul, .bannerOverlay p {
+    width: 100%;
+  }
+  /* line 290, ../sass/_bannerOverlays.scss */
+  .bannerOverlay ul li {
+    background: #e6e6e6;
+    float: left;
+    height: 40px;
+    margin: 5px 7px;
+    width: 18%;
+  }
+
+  /* line 299, ../sass/_bannerOverlays.scss */
+  #bannerDeptSearch {
+    float: left;
+    margin-top: 10px;
+    padding-bottom: 0;
+  }
+
+  /* line 308, ../sass/_bannerOverlays.scss */
+  input#interestKeyword, p#departmentSearchHeading {
+    width: 100%;
+  }
+}
+@media (max-width: 766px) {
+  /* line 312, ../sass/_bannerOverlays.scss */
+  .bannerOverlay ul li {
+    margin: 5px 6px;
+  }
+}
+@media (max-width: 666px) {
+  /* line 312, ../sass/_bannerOverlays.scss */
+  .bannerOverlay ul li {
+    margin: 5px;
+  }
+}
+@media (max-width: 589px) {
+  /* line 312, ../sass/_bannerOverlays.scss */
+  .bannerOverlay ul li {
+    background: #e6e6e6;
+    float: none;
+    height: 30px;
+    margin: 0 0 1px;
+    padding: 5px 10px;
+    width: 100%;
+  }
+}
+
+/* line 1, ../sass/_tileOverlays.scss */
+.overlayText {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  visibility: hidden;
+  width: 100%;
+}
+/* line 9, ../sass/_tileOverlays.scss */
+.overlayText.summary {
+  top: 10%;
+}
+/* line 12, ../sass/_tileOverlays.scss */
+.overlayText h2 {
+  color: #666666;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+/* line 26, ../sass/_tileOverlays.scss */
+.white .overlayText h2 {
+  color: #666666;
+}
+
+/* line 31, ../sass/_tileOverlays.scss */
+.withOverlayText:hover .overlayText {
+  opacity: 1;
+  pointer-events: none;
+  visibility: visible;
+}
+/* line 35, ../sass/_tileOverlays.scss */
+.withOverlayText:hover .overlayText a, .withOverlayText:hover .overlayText img {
+  opacity: 1;
+}
+/* line 38, ../sass/_tileOverlays.scss */
+.withOverlayText:hover .overlayText#overlayNoImage {
+  padding-right: 10px;
+  opacity: 1;
+}
+/* line 45, ../sass/_tileOverlays.scss */
+.withOverlayText:hover img {
+  opacity: 0.3;
+}
+/* line 48, ../sass/_tileOverlays.scss */
+.withOverlayText:hover #overlayNoImage {
+  opacity: 0.2;
+}
+/* line 50, ../sass/_tileOverlays.scss */
+.withOverlayText:hover #overlayNoImage #textWrapper {
+  opacity: 0.1;
+}
+/* line 57, ../sass/_tileOverlays.scss */
+.withOverlayText a:hover img {
+  opacity: 0.3;
+}
+
+/* line 63, ../sass/_tileOverlays.scss */
+#textWrapper {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* Tile Overlay - Instagram */
+/* line 71, ../sass/_tileOverlays.scss */
+.overlayText#instagramThumb {
+  height: 96%;
+  top: 0;
+  width: 96%;
+}
+/* line 76, ../sass/_tileOverlays.scss */
+.overlayText #expandIcon {
+  margin-top: 27%;
+  pointer-events: auto;
+  position: relative;
+  opacity: 0.5;
+}
+/* line 83, ../sass/_tileOverlays.scss */
+.overlayText #expandIcon:hover {
+  opacity: 1;
+}
+/* line 88, ../sass/_tileOverlays.scss */
+.overlayText .socMedIcons .twitterIcon, .overlayText .socMedIcons .facebookIcon {
+  pointer-events: auto;
+  opacity: 0.5;
+}
+/* line 91, ../sass/_tileOverlays.scss */
+.overlayText .socMedIcons .twitterIcon:hover, .overlayText .socMedIcons .facebookIcon:hover {
+  opacity: 1;
+}
+
+/*Mobile Overlay*/
+@media (max-width: 939px) {
+  /* line 100, ../sass/_tileOverlays.scss */
+  .withOverlayText a:hover, .withOverlayText:hover a, .withOverlayText:hover img, .withOverlayText:hover #overlayNoImage, .withOverlayText:hover #overlayNoImage #textWrapper {
+    opacity: 0.8;
+  }
+
+  /* line 103, ../sass/_tileOverlays.scss */
+  .withOverlayText:hover .overlayText, .withOverlayText a:hover .overlayText {
+    visibility: hidden;
+  }
+}
+/** END OF CUSTOM OVERLAYS **/
+/* line 1, ../sass/_counselorByGeolocation.scss */
+#counselorTile {
+  color: white;
+  height: 152px;
+}
+/* line 4, ../sass/_counselorByGeolocation.scss */
+#counselorTile strong {
+  font-weight: 700;
+}
+@media (max-width: 1102px) {
+  /* line 1, ../sass/_counselorByGeolocation.scss */
+  #counselorTile {
+    height: 132px;
+  }
+}
+/* line 13, ../sass/_counselorByGeolocation.scss */
+#counselorTile a:hover {
+  /* was #FCC707 */
+  color: #f47920;
+  opacity: 1;
+}
+/* line 19, ../sass/_counselorByGeolocation.scss */
+#counselorTile p {
+  margin-bottom: 0;
+}
+
+/* line 26, ../sass/_counselorByGeolocation.scss */
+#geoNotSupported img, #geoError img {
+  margin-top: 10px;
+}
+/* line 31, ../sass/_counselorByGeolocation.scss */
+#geoNotSupported p, #geoError p {
+  margin-top: 10px;
+  position: absolute;
+  bottom: 10px;
+}
+
+/* line 39, ../sass/_counselorByGeolocation.scss */
+#geoNoCounselor {
+  margin-top: 10px;
+}
+/* line 43, ../sass/_counselorByGeolocation.scss */
+#geoNoCounselor #leftSide {
+  float: left;
+  margin-right: 10px;
+}
+/* line 49, ../sass/_counselorByGeolocation.scss */
+#geoNoCounselor #rightside {
+  margin-top: 30px;
+}
+/* line 54, ../sass/_counselorByGeolocation.scss */
+#geoNoCounselor #searchLink {
+  float: left;
+  margin-top: 20px;
+}
+
+/* line 61, ../sass/_counselorByGeolocation.scss */
+#counselor {
+  margin-top: 10px;
+}
+@media (max-width: 1102px) {
+  /* line 61, ../sass/_counselorByGeolocation.scss */
+  #counselor {
+    margin-top: 5px;
+  }
+}
+/* line 70, ../sass/_counselorByGeolocation.scss */
+#counselor #leftSide {
+  float: left;
+  height: 135px;
+  margin-right: 10px;
+}
+@media (max-width: 1102px) {
+  /* line 70, ../sass/_counselorByGeolocation.scss */
+  #counselor #leftSide {
+    width: 30%;
+  }
+}
+@media (max-width: 640px) {
+  /* line 70, ../sass/_counselorByGeolocation.scss */
+  #counselor #leftSide {
+    height: 125px;
+    width: 40%;
+  }
+}
+/* line 84, ../sass/_counselorByGeolocation.scss */
+#counselor #rightside {
+  float: left;
+  height: 135px;
+  margin-top: 0;
+  position: relative;
+  width: 60%;
+}
+@media (max-width: 1102px) {
+  /* line 84, ../sass/_counselorByGeolocation.scss */
+  #counselor #rightside {
+    margin-top: 0;
+  }
+}
+@media (max-width: 640px) {
+  /* line 84, ../sass/_counselorByGeolocation.scss */
+  #counselor #rightside {
+    height: 125px;
+    width: 50%;
+  }
+}
+@media (max-width: 1005px) {
+  /* line 84, ../sass/_counselorByGeolocation.scss */
+  #counselor #rightside {
+    height: 120px;
+  }
+}
+@media (max-width: 940px) {
+  /* line 84, ../sass/_counselorByGeolocation.scss */
+  #counselor #rightside {
+    height: 110px;
+  }
+}
+/* line 107, ../sass/_counselorByGeolocation.scss */
+#counselor #rightside #moreLink {
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 1102px) {
+  /* line 107, ../sass/_counselorByGeolocation.scss */
+  #counselor #rightside #moreLink {
+    display: none;
+  }
+}
+@media (max-width: 940px) {
+  /* line 107, ../sass/_counselorByGeolocation.scss */
+  #counselor #rightside #moreLink {
+    display: none;
+  }
+}
+/* line 118, ../sass/_counselorByGeolocation.scss */
+#counselor #rightside p#contactInfo {
+  margin-top: 10px;
+}
+/* line 125, ../sass/_counselorByGeolocation.scss */
+#counselor #rightside a #state {
+  color: #ffcb05;
+}
+
+/* line 1, ../sass/_featuredNewsStory.scss */
+.featureNews {
+  background-color: #3f3c3d;
+  overflow: hidden;
+}
+/* line 6, ../sass/_featuredNewsStory.scss */
+.featureNews h2 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  font-style: italic;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+@media (max-width: 1110px) {
+  /* line 6, ../sass/_featuredNewsStory.scss */
+  .featureNews h2 {
+    font-size: 22px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 786px) {
+  /* line 6, ../sass/_featuredNewsStory.scss */
+  .featureNews h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 388px) {
+  /* line 6, ../sass/_featuredNewsStory.scss */
+  .featureNews h2 {
+    font-size: 20px;
+  }
+}
+/* line 38, ../sass/_featuredNewsStory.scss */
+.featureNews img {
+  float: left;
+}
+/* line 41, ../sass/_featuredNewsStory.scss */
+.featureNews p {
+  margin-bottom: 5px;
+}
+@media (max-width: 1185px) {
+  /* line 46, ../sass/_featuredNewsStory.scss */
+  .featureNews h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1110px) {
+  /* line 46, ../sass/_featuredNewsStory.scss */
+  .featureNews h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1025px) {
+  /* line 46, ../sass/_featuredNewsStory.scss */
+  .featureNews h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 965px) {
+  /* line 46, ../sass/_featuredNewsStory.scss */
+  .featureNews h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 650px) {
+  /* line 46, ../sass/_featuredNewsStory.scss */
+  .featureNews h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 46, ../sass/_featuredNewsStory.scss */
+  .featureNews h3 {
+    font-size: 20px;
+  }
+}
+
+/* line 1, ../sass/_twitterWidgetHomepage.scss */
+#twitter-widget-6, #twitter-widget-0 {
+  width: 80% !important;
+}
+
+/* line 4, ../sass/_twitterWidgetHomepage.scss */
+img.tweetieBird {
+  height: 62px;
+  padding-top: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  width: 54px;
+}
+
+/* line 14, ../sass/_twitterWidgetHomepage.scss */
+.taylorTweet {
+  display: block;
+  height: 100%;
+  min-height: 115px;
+  overflow: hidden;
+  text-align: center;
+}
+@media (max-width: 650px) {
+  /* line 14, ../sass/_twitterWidgetHomepage.scss */
+  .taylorTweet {
+    min-height: 220px;
+  }
+}
+
+/* line 1, ../sass/_statsBox.scss */
+.statsBox {
+  background-color: #ffcb05;
+  /* was #fcc707 */
+  height: 290px;
+  padding: 40px 10px 10px 10px;
+}
+@media (max-width: 640px) {
+  /* line 1, ../sass/_statsBox.scss */
+  .statsBox {
+    height: 190px;
+  }
+}
+
+/* line 11, ../sass/_statsBox.scss */
+.statsBoxNumber {
+  color: #5a3358;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* line 24, ../sass/_statsBox.scss */
+.statsBoxContent {
+  color: #5a3358;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+/* line 37, ../sass/_statsBox.scss */
+.statsBoxClick {
+  color: black;
+  font-size: 15px;
+}
+
+/* line 1, ../sass/_recentNews.scss */
+.recentNews {
+  height: 190px;
+  padding: 10px;
+  position: relative;
+}
+@media (max-width: 640px) {
+  /* line 1, ../sass/_recentNews.scss */
+  .recentNews {
+    height: 90px;
+  }
+}
+/* line 8, ../sass/_recentNews.scss */
+.recentNews h2 {
+  color: #666666;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  font-style: italic;
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+@media (max-width: 1195px) {
+  /* line 8, ../sass/_recentNews.scss */
+  .recentNews h2 {
+    font-size: 27px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 1025px) {
+  /* line 8, ../sass/_recentNews.scss */
+  .recentNews h2 {
+    font-size: 26px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 950px) {
+  /* line 8, ../sass/_recentNews.scss */
+  .recentNews h2 {
+    font-size: 24px;
+    line-height: 23px;
+  }
+}
+@media (max-width: 865px) {
+  /* line 8, ../sass/_recentNews.scss */
+  .recentNews h2 {
+    font-size: 22px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 8, ../sass/_recentNews.scss */
+  .recentNews h2 {
+    font-size: 26px;
+    line-height: 25px;
+  }
+}
+/* line 66, ../sass/_recentNews.scss */
+.recentNews p {
+  color: #ffcb05;
+}
+/* line 69, ../sass/_recentNews.scss */
+.recentNews:hover {
+  opacity: 0.2;
+}
+
+/****  FOOTER CHANGES ****/
+/* line 2, ../sass/_footer.scss */
+.footer-social {
+  margin-bottom: 40px;
+  margin-top: 20px !important;
+}
+
+/* line 8, ../sass/_footer.scss */
+.social-button {
+  text-align: center;
+}
+@media (min-width: 941px) and (max-width: 1024px) {
+  /* line 8, ../sass/_footer.scss */
+  .social-button {
+    text-align: right;
+  }
+}
+/* line 15, ../sass/_footer.scss */
+.social-button a {
+  display: initial !important;
+  float: none !important;
+  opacity: initial !important;
+}
+
+/* line 21, ../sass/_footer.scss */
+.footer-copy {
+  margin-top: 20px !important;
+}
+/* line 25, ../sass/_footer.scss */
+.footer-copy p {
+  color: #666666;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  text-align: center;
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* line 25, ../sass/_footer.scss */
+  .footer-copy p {
+    text-align: right;
+  }
+}
+
+/* line 42, ../sass/_footer.scss */
+.footer-text p {
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 0 !important;
+  line-height: 14px !important;
+}
+
+/* line 55, ../sass/_footer.scss */
+.footer-links, .footer-text, .footer-social, .footer-copy {
+  padding: 5px !important;
+}
+
+/* line 59, ../sass/_footer.scss */
+.footer-links ul {
+  margin-bottom: 0px !important;
+}
+/* line 63, ../sass/_footer.scss */
+.footer-links ul li, .footer-links ul li a {
+  color: #666666;
+  font-family: "Helvetica Oblique", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+/* line 74, ../sass/_footer.scss */
+.footer-links h2 {
+  border-bottom: none;
+  color: white;
+  font-family: "Helvetica Oblique", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0 auto 10px auto;
+  padding: 0 10px;
+  text-align: center;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+/* line 94, ../sass/_footer.scss */
+.footer-links .heading-one {
+  background-color: #5a3358;
+}
+/* line 99, ../sass/_footer.scss */
+.footer-links .special-one {
+  color: #5a3358;
+}
+/* line 103, ../sass/_footer.scss */
+.footer-links .heading-two {
+  background-color: #00adef;
+}
+/* line 108, ../sass/_footer.scss */
+.footer-links .special-two {
+  color: #00adef;
+}
+/* line 112, ../sass/_footer.scss */
+.footer-links .heading-three {
+  background-color: #f47920;
+}
+/* line 117, ../sass/_footer.scss */
+.footer-links .special-three {
+  color: #f47920;
+}
+
+/* line 122, ../sass/_footer.scss */
+.special-one, .special-two, .special-three {
+  font-weight: 700;
+}
+
+/* line 127, ../sass/_footer.scss */
+.footer-nav {
+  background-color: #f2f2f2 !important;
+}

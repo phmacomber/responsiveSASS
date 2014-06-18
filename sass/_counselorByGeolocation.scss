@@ -1,108 +1,151 @@
-/* COUNSELOR BY GEOLOCATION */
-#counselorTile{
-  color: $white;
-  height:200px;
-  strong {
-  	font: {
-  		weight: $bold;
-  	}
-  }
-  a {
-  	&:hover {
-  		color: $yellow;
-  		opacity: 1;
-  	}
-  }
-  p {
-  	margin: {
-  		bottom:0;
-  	}
-  }
+#counselorTile {
+	color: $white;
+	height: 152px;
+	strong {
+		font: {
+			weight: $fontBold;
+		}
+	}
+	@media (max-width: 1102px) {
+		height: 132px;
+	}
+	a {
+		&:hover {
+			/* was #FCC707 */
+			color: $orange;
+			opacity: 1;
+		}
+	}
+	p {
+		margin: {
+			bottom: 0;
+		}
+	}
 }
 #geoNotSupported, #geoError {
 	img {
 		margin: {
-			top: 10px;
+		top: 10px;
 		}
 	}
 	p {
-		bottom: 10px;
 		margin: {
 			top: 10px;
 		}
-   		position: absolute;
+		position: absolute;
+		bottom: 10px;
 	}
 }
-#geoNoCounselor { 
-   	margin: {
-   		top:10px;
-   	}
-   	#leftSide {
-   		float:left;
-   		margin: {
-   			right: 10px;
-   		}
-   	}
-   	#rightSide {
-   		margin: {
-   			top: 30px;
-   		}
-   	}
-   	#searchLink {
-   		float:left;
-   		margin: {
-   			top: 20px;
-   		}
-   	}
+#geoNoCounselor {
+	margin: {
+		top: 10px;
+	}
+	#leftSide {
+		float: left;
+		margin: {
+			right: 10px;
+		}
+	}
+	#rightside {
+		margin: {
+			top: 30px;
+		}
+	}
+	#searchLink	{
+		float: left;
+		margin: {
+			top: 20px;
+		}
+	}
 }
 #counselor {
 	margin: {
 		top: 10px;
 	}
-	#leftside {
+	@media (max-width: 1102px) {
+		margin: {
+			top: 5px;
+		}
+	}
+	#leftSide {
 		float: left;
-		height: 170px;
+		height: 135px;
 		margin: {
 			right: 10px;
 		}
+		@media (max-width: 1102px) {
+			width: 30%;
+		}
+		@media (max-width: 640px) {
+			height: 125px;
+			width: 40%;
+		}
 	}
-	#rightSide {
+	#rightside {
 		float: left;
-		height: 130px;
+		height: 135px;
 		margin: {
-			top: 30px;
+			top: 0;
 		}
 		position: relative;
 		width: 60%;
-		#moreLink {
-			position: absolute;
-			bottom: 5px;
-		}
-	}
-}
-@media (max-width: 1102px) {
-	#counselor {
-		#leftSide {
-			width: 30%;
-		}
-		#rightSide {
+		@media (max-width: 1102px) {
 			margin: {
 				top: 0;
 			}
 		}
-	}
-}
-@media (max-width: 1005px) {
-	#counselor {
-		#rightSide {
+		@media (max-width: 640px) {
+			height: 125px;
+			width: 50%;
+		}
+		@media (max-width: 1005px) {
 			height: 120px;
 		}
-	}
-}
-@media (max-width: 940px) {
-	#counselor {
-		#rightSide {
+		@media (max-width: 940px) {
 			height: 110px;
+		}
+		#moreLink {
+			position: absolute;
+			bottom: 0;
+			@media (max-width: 1102px) {
+				display: none;
+			}
+			@media (max-width: 940px) {
+				display: none;
+			}
+		}
+		p {
+			&#contactInfo {
+				margin: {
+					top: 10px;
+				}
+			}
+		}
+		a {
+			#state {
+				color: $yellow;
+			}
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

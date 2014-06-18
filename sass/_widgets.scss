@@ -1,0 +1,19 @@
+.readMore {
+	color: $yellow;
+	@include sanSerifFontFamily-nonBold;
+	font: {
+		size: 12px;
+		weight: $fontBold;
+	}
+	padding: 10px;
+	text: {
+		align: right;
+		transform: uppercase;
+	}
+	a {
+		color: $yellow;
+	}
+}
+.white .readMore, .white .readMore a{
+  color:#b06030;
+}

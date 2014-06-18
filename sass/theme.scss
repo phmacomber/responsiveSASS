@@ -1,0 +1,193 @@
+@import "variables";
+
+@import url(/application/themes/foundation-starter-site/css/prettyPhoto.css);
+@import url(/application/themes/foundation-starter-site/css/chosen.css);
+@import url(/application/themes/foundation-starter-site/css/flexslider.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600);
+@import url(http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400,700italic);
+
+/*** Global properties ***/
+@font-face {
+	font: {
+		family: 'JosefinSlabSemiBold';
+		weight: normal;
+		style: normal;
+	}
+	src: url('fonts/JosefinSlab-SemiBold-webfont.eot');
+    src: url('fonts/JosefinSlab-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/JosefinSlab-SemiBold-webfont.woff') format('woff'),
+         url('fonts/JosefinSlab-SemiBold-webfont.ttf') format('truetype'),
+         url('fonts/JosefinSlab-SemiBold-webfont.svg#JosefinSlabSemiBold') format('svg');
+}
+
+body {
+	background: url("/application/themes/foundation-starter-site/images/template/footer-bg.png") repeat scroll 0 0 transparent;
+	font-size:0.8em;
+}
+#main {
+	background: $white;
+	@include css3(box-shadow, 0 0 5px rgba(0, 0, 0, 0.5));
+	margin: 0 auto;
+	max-width: $overallMaxWidth - 20px;
+	padding: 0 0 20px 0;
+}
+h1 {
+	font: {
+		size: 46px;
+		weight: $fontBold;
+	}
+	line: {
+		height: 51px;
+	}
+	margin: 0 0 23px 0;
+	text: {
+		transform: uppercase;
+	}
+}
+h2 {
+	color: $burnt-orange;
+	font: {
+		size: 20px;
+		weight: $fontNormal;
+	}
+	line: {
+		height: 23px;
+	}
+	text: {
+		transform: uppercase;
+	}
+}
+p {
+	font: {
+		size: 13px;
+	}
+	line: {
+		height: 23px;
+	}
+	margin: 0 0 23px 0;
+}
+.foundation--homepage {
+	p {
+		font: {
+		size: 15px;
+	}
+	line: {
+		height: 23px;
+	}
+	margin: 0 0 23px 0;
+	}
+}
+h3, h4, h5, h6 {
+	color: $theme-steel-grey;
+	font: {
+		weight: normal;
+	}
+	line: {
+		height: 1.2em;
+	}
+	margin: 0 0 15px;
+}
+h3 {
+	color: $burnt-orange;
+	font: {
+		size: 16px;
+	}
+	letter: {
+		spacing: -0.3em;
+	}
+	margin: 0;
+}
+
+.foundation--homepage h3 {
+	font: {
+		size: 20px;
+	}	
+	text: {
+		transform: uppersae;
+	}
+}
+h4 {
+	font: {
+		size: 14px;
+	}
+}
+h5 {
+	font: {
+		size: 13px;
+	}
+}
+h6 {
+	font: {
+		size: 12px;
+	}
+}
+h1 {
+	strong {
+		font: {
+			size: 60px;
+			weight: normal;
+		}
+		line: {
+			height: 1.2em;
+		}
+	}
+	em {
+		border: {
+			bottom: 1px solid $theme-light-grey;
+		}
+		color: $theme-dark-grey;
+		font: {
+			size: 48px; 
+			style: normal;
+		}
+		display: block;
+		line: {
+			height: 1.2em;
+		}
+		padding: {
+			bottom: 15px;
+		}
+	}
+}
+strong, b, big {
+	color: $theme-near-black;
+}
+a {
+	color: $burnt-orange;
+	outline: none;
+	text: {
+		decoration: none;
+	}
+	&:hover, &:focus {
+		text: {
+			decoration: none;
+		}
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter:alpha(opacity=50);
+		@include css3((-moz-, -khtml-,''), opacity, 0.5);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

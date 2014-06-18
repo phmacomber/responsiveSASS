@@ -1,0 +1,22 @@
+/**** GENERAL ISOTOPE PAGE CHANGES ****/
+
+/*Custom CSS Transitions - mg*/
+.isotope,
+.isotope .isotope-item {
+	@include transitionDuration (0.8s)
+}
+.isotope {
+	@include transitionProperty (height, width)
+}
+
+// NEED A MIXIN FOR TWO PROPERTIES WITH ONE GETTING THE PREFIXES
+.isotope .isotope-item {
+ @include css3-a ((-webkit-, -moz-, -ms-, -o-, ''), transition-property, transform, opacity)
+ }
+
+/** disabling Isotope CSS3 transitions **/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+	@include transitionDuration (0s)
+}

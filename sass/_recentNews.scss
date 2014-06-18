@@ -1,0 +1,72 @@
+.recentNews {
+	height: 190px;
+	padding: 10px;
+	position: relative;
+	@media (max-width: $mobile + 1px){
+		height: 90px;
+	}
+	h2 {
+		color: $grey-medium;
+		@include serifFontFamily;
+		font: {
+			size: 35px;
+			style: italic;
+		}
+		line: {
+			height: 30px;
+		}
+		margin: {
+			bottom: 0;
+			top: 0;
+		}
+		text: {
+			transform: uppercase;
+		}
+		@media (max-width: 1195px) {
+			font: {
+				size: 27px;
+			}
+			line: {
+				height: 26px;
+			}
+		}
+		@media (max-width: 1025px) {
+			font: {
+				size: 26px;
+			}
+			line: {
+				height: 25px;
+			}
+		}
+		@media (max-width: 950px) {
+			font: {
+				size: 24px;
+			}
+			line: {
+				height: 23px;
+			}
+		}
+		@media (max-width: 865px) {
+			font: {
+				size: 22px;
+			}
+			line: {
+				height: 21px;
+			}
+		}
+		@media (max-width: 768px) {
+			font: {
+				size: 26px;
+			}
+			line: {
+				height: 25px;
+			}
+		}
+	}
+	p {
+		color: $yellow;
+	}
+	&:hover {
+		opacity: 0.2;
+	}
+}

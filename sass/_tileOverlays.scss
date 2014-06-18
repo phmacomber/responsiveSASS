@@ -1,0 +1,109 @@
+.overlayText {
+	position: absolute;
+	top: 40%;
+	text: {
+		align: center;
+	}
+	visibility: hidden;
+	width: 100%;
+	&.summary {
+		top: 10%;
+	}
+	h2 {
+		color: $grey-medium;
+		@include sanSerifFontFamily-nonBold;
+		font: {
+			size: 16px;
+		}
+		line: {
+			height: 24px;
+		}
+		text: {
+			transform: uppercase;
+		}
+	}
+}
+.white .overlayText h2 {
+	color: $grey-medium;
+}
+.withOverlayText {
+	&:hover {
+		.overlayText {
+			opacity: 1;
+			pointer-events: none;
+			visibility: visible;
+			a, img {
+				opacity: 1;
+			}
+			&#overlayNoImage {
+				padding: {
+					right: 10px;
+				}
+				opacity: 1;
+			}
+		}
+		img {
+			opacity: 0.3;
+		}
+		#overlayNoImage {
+			opacity: 0.2;
+			#textWrapper {
+				opacity: 0.1;
+			}
+		}
+	}
+	a {
+		&:hover {
+			img {
+				opacity: 0.3;
+			}
+		}
+	}
+}
+#textWrapper {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+/* Tile Overlay - Instagram */
+.overlayText {
+	&#instagramThumb {
+		height: 96%;
+		top: 0;
+		width: 96%;
+	}
+	#expandIcon {
+		margin: {
+			top: 27%;
+		}
+		pointer-events: auto;
+		position: relative;
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.socMedIcons {
+		.twitterIcon, .facebookIcon {
+			pointer-events: auto;
+			opacity: 0.5;
+			&:hover {
+				opacity:1;
+			}
+		}
+	}
+}
+
+/*Mobile Overlay*/
+@media (max-width: $tablet) {
+  .withOverlayText a:hover, .withOverlayText:hover a, .withOverlayText:hover img, .withOverlayText:hover #overlayNoImage, .withOverlayText:hover #overlayNoImage #textWrapper{
+  opacity:0.8;
+  }
+ .withOverlayText:hover .overlayText, .withOverlayText a:hover .overlayText{
+  visibility:hidden; 
+  }
+}
+
+/** END OF CUSTOM OVERLAYS **/
+

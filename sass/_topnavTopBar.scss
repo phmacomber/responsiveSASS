@@ -1,0 +1,283 @@
+/* TOP-NAV - Top-bar - mainNav and admButtons */
+/* Desktop */
+@media (min-width: $tablet + 1px) {	
+	.top-nav, .top-bar {
+		height: 35px;
+	}
+	#main .row {
+	    padding: {
+	    	top: 0px !important;
+	    }
+  	}
+}
+.top-nav {
+	@media (max-width: $mobile + 1px) {
+		background: {
+			color: $taylor-purple !important;
+		}
+	}
+	@media (max-width: $tablet) {
+		height: 45px;
+	}
+}
+
+/* mobile/tablet logo area */
+.row {
+	&.logo-menu {
+		padding: 0 10px !important;
+	}
+}
+@media (max-width: $tablet) {
+	.top-bar {
+		.title-area {
+			float: initial;
+			text: {
+				align: center;
+			}
+		}
+		.toggle-topbar {
+			display: initial;
+		}
+	}
+}
+.top-bar {
+	.name {
+		height: 35px !important;
+		margin: auto;
+		width: 150px;
+		h1 {
+			a {
+				display: initial !important;
+				width: initial !important;
+			}
+		}
+	}
+}
+.name {
+	h1 {
+		a {
+			padding: 0px !important;
+		}
+	}
+	img {
+		background: {
+			color: $taylor-purple;
+		}
+		padding: 5px 20px;
+		@media (max-width: $tablet) {
+			margin: {
+				top: -10px;
+			}
+			padding: {
+				bottom: 0px;
+				top: 0px;
+			}
+		}
+	}
+}
+@media (min-width: $mobile + 2px) {
+  .top-bar .toggle-topbar.menu-icon a::after {
+    -webkit-box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black;
+    box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black;
+  }
+}  
+/* mobile/tablet search */
+#mainNav {
+	#searchForm {
+		input {
+			@include serifFontFamily;
+			font: {
+				size: 20px;
+				style: italic;
+			}
+			line-height: 22px;
+			text: {
+				transform: uppercase;
+			}
+		}
+	}
+}
+.admButtons {
+	.infoButton {
+		background: {
+			color: $taylor-slate !important;
+		}
+	}
+	.visitButton {
+		background: {
+			color: $taylor-drk-grn !important;
+		}
+	}
+	.applyButton {
+		background: {
+			color: $orange !important;
+		}
+	}
+}
+.admButtons, .admButtons li, .admButtons a {
+	color: $white !important;
+	@include sanSerifFontFamily;
+	font: {
+		size: 11px !important;
+		weight: $fontBold !important;
+	}
+	line-height: 16px !important;
+	text: {
+		transform: uppercase !important;
+	}
+}
+.admButtons {
+	margin: {
+		right: 12px !important;
+	}
+	li {
+		margin: {
+			left: 10px;
+		}
+	}
+}
+
+/** END Specfic Rows **/
+
+/** Dropdowns and Main Navigation **/
+.top-bar-section {
+	width: 100%;
+	ul {
+		margin: 10px 0 0 10px;
+		li {
+			a {
+				color: $grey-medium;
+			}
+			&:hover > a , &:hover > a:hover{
+				background: rgba(17, 17, 17, 0.5);
+			}
+		}
+		&.dropdown l1 a, &#mainNav ul.dropdown li > a {
+			@include sanSerifFontFamily-nonBold;
+			font: {
+				size: 13px;
+				style: normal;
+			}
+			text: {
+				transform: uppercase;
+			}
+		}
+	}
+	#mainNav {
+		li > a {
+			opacity: 1;
+		}
+	}
+	> ul >.divider {
+		height: 22px;
+		margin: {
+			bottom: 10px;
+			top: -6px;
+		}
+	}
+	.dropdown {
+		li:hover {
+			background: {
+				color: rgba(122,122,122,0.9);
+			}
+		}
+	}
+	//THIS SECTION SHOULD BE MADE INTO STANDARD SCSS CASCADING SELECTORS
+	ul.dropdown li:hover a, ul#mainNav ul.dropdown li:hover > a {
+		background: {
+			color: transparent;
+		}
+	}
+	ul#mainNav li > a {
+		@include serifFontFamily;
+		font: {
+			size: 20px;
+			style: italic;
+		}
+		line-height: 22px;
+		text: {
+			transform: uppercase;
+		}
+	}
+	//THIS SECTION SHOULD BE MADE INTO STANDARD SCSS CASCADING SELECTORS
+	#mainNav li:not(.has-form) a:not(.button), li:not(.has-form) a:not(.button) {
+		background: {
+			color: transparent;
+			image: none;
+		}
+	}
+	//THIS SECTION SHOULD BE MADE INTO STANDARD SCSS CASCADING SELECTORS
+	#mainNav li:not(.has-form):hover a:not(.button), #mainNav li:not(.has-form) a:not(.button):hover {
+		background: {
+			color:rgba(17, 17, 17, 0.5);
+		}
+		color: $white !important;
+	}
+	.has-dropdown {
+		margin: {
+			left: -1px;
+			top: -6px;
+		}
+	}
+}
+.logo-menu {
+	.top-bar-section {
+		.has-dropdown {
+			> a:after {
+				border: {
+					color: rgba(204, 204, 204, 0.5) transparent transparent transparent !important;
+				}
+				@media only screen and (min-width: $tablet + 1px) {
+					margin: {
+						top: 0px !important;
+					}
+					top: 12px !important;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
